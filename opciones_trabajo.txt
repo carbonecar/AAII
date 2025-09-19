@@ -1,0 +1,59 @@
+1. Clasificación multimodal con texto + imágenes
+
+Idea: usar un dataset abierto tipo Meme dataset (texto + imagen), o de productos (imagen + descripción), y entrenar un modelo multimodal (ej. CLIP o un pequeño modelo de fusión CNN + Transformer).
+
+Por qué es viable: existen datasets listos, se pueden usar arquitecturas pre-entrenadas y finetunear.
+
+Valor académico: muestra comprensión de CNNs, embeddings de texto y multimodalidad (Unidad 3).
+
+2. Graph Neural Networks en un problema social o de redes
+
+Idea: usar un dataset como Cora o Citeseer (papers + citas) para clasificación de nodos, o MovieLens con relaciones de usuarios/películas.
+
+Trabajo: implementar GCN vs GAT, mostrar diferencias de performance y robustez.
+
+Por qué es viable: librerías como PyTorch Geometric simplifican bastante; dataset ya disponible.
+
+Valor académico: aplica Unidad 4 (GNNs, attention, message-passing).
+
+3. Forecasting con Transformers para series temporales
+
+Idea: elegir un dataset público (ej. consumo eléctrico, clima, series financieras) y comparar LSTM vs Transformer (o un modelo simple tipo Informer).
+
+Trabajo: preprocesar, entrenar, evaluar métricas (RMSE, MAE, MASE).
+
+Por qué es viable: datasets públicos, fuerte relación con Unidad 5 (Transformers en secuencias).
+
+Valor académico: conecta teoría de secuencias con práctica aplicada.
+
+4. Recomendador neural con embeddings
+
+Idea: usar MovieLens o Amazon Reviews, entrenar un modelo two-tower neural network con embeddings de usuario y producto.
+
+Trabajo: comparar con baseline (ALS o kNN), evaluar métricas de ranking (NDCG, Recall@k).
+
+Por qué es viable: dataset simple, tareas claras y escalables.
+
+Valor académico: aplica Unidad 8 de la materia.
+
+5. Estimación de incertidumbre con dropout en inferencia
+
+Idea: entrenar una CNN para clasificación (ej. MNIST, CIFAR-10), y mostrar cómo MC Dropout o Bayesian Neural Networks permiten estimar incertidumbre.
+
+Trabajo: comparar precisión vs calibración, analizar confianza de las predicciones.
+
+Por qué es viable: dataset chico, experimentos rápidos, resultados claros.
+
+Valor académico: cubre Unidad 7 (Bayesian deep learning + incertidumbre).
+
+6. Retrieval-Augmented Generation (RAG) en un dominio pequeño
+
+Idea: montar un mini-sistema de preguntas y respuestas sobre un corpus reducido (ej. artículos científicos de un tema, Wikipedia de Argentina, dataset de contratos).
+
+Trabajo: embeddings + FAISS/Weaviate + LLM (ej. Llama 3 pequeño).
+
+Por qué es viable: se puede usar open-source, dataset limitado y acotado.
+
+Valor académico: aplica Unidad 6 (LLMs, RAG, agentes).
+
+
